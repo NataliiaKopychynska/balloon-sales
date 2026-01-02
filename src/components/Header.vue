@@ -5,7 +5,7 @@ import Button from "@/Atoms/Button.vue";
 <template>
   <header>
     <div>
-      <div>
+      <div class="logo-container">
         <img class="logo" src="/src/assets/logo.svg" alt="Logo" />
         <h1 class="logo-text">BalloonJoy</h1>
       </div>
@@ -18,7 +18,9 @@ import Button from "@/Atoms/Button.vue";
         </ul>
       </nav>
 
-      <Button variant="primary" as="button" href="/contact">Contact Us</Button>
+      <Button variant="primary" as="button" size="s" href="/contact"
+        >Contact Us</Button
+      >
     </div>
   </header>
 </template>
@@ -26,6 +28,12 @@ import Button from "@/Atoms/Button.vue";
 <style scoped>
 header {
   position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 1000;
+
   top: 0;
   left: 0;
   width: 100%;
@@ -38,20 +46,26 @@ header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-header div {
+header > div {
   max-width: 1200px;
   display: flex;
   align-items: center;
+  gap: 120px;
   justify-content: space-between;
 }
 
+.logo-container {
+  display: flex;
+  align-items: center;
+  /* gap: 10px; */
+}
 .logo {
   width: 40px;
   height: 40px;
 }
 .logo-text {
   font-family: var(--font-heading);
-  font-size: 1.5rem;
+  font-size: 24px;
   color: var(--color-text);
   letter-spacing: 0.05rem;
 }

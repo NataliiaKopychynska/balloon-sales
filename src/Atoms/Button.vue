@@ -21,6 +21,10 @@ const props = defineProps({
 });
 
 const classes = computed(() => {
+  if (props.as === "a") {
+    return ["button--link", `button--${props.size}`].join(" ");
+  }
+
   return [`button--${props.variant}`, `button--${props.size}`].join(" ");
 });
 </script>
@@ -36,38 +40,45 @@ const classes = computed(() => {
 </template>
 
 <style scoped>
-.btn-primary {
+.button--primary {
   background-color: var(--color-primary);
   color: white;
 }
 
-.btn-primary:hover {
+.button--primary:hover {
   opacity: 0.85;
 }
 
-.btn-secondary {
+.button--secondary {
   background-color: var(--color-secondary);
   color: var(--color-text);
 }
 
 .button--link {
-  background-color: transparent;
+  background-color: var(--color-bg);
   color: var(--color-primary);
-  padding: 0;
-  border-radius: 0;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  letter-spacing: 0.05rem;
+  transition: background-color 0.3s ease;
 }
 .button--link:hover {
-  text-decoration: underline;
+  transform: scale(1.05);
+  box-shadow: var(--box-shadow);
 }
 
 .button--s {
-  font-size: 16px;
-  padding: 0.25rem 0.5rem;
+  font-size: 18px;
+  height: 42px;
+  padding: 0.5rem 1.5rem;
+  border-radius: 24px;
 }
 .button--m {
   font-size: 20px;
-
-  height: 48px;
-  padding: 0.5rem 1rem;
+  height: 56px;
+  padding: 0.5rem 1.5rem;
+  border-radius: 48px;
 }
 </style>
