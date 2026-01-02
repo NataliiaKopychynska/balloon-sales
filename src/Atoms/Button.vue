@@ -45,10 +45,6 @@ const classes = computed(() => {
   color: white;
 }
 
-.button--primary:hover {
-  opacity: 0.85;
-}
-
 .button--secondary {
   background-color: var(--color-secondary);
   color: var(--color-text);

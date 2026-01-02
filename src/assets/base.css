@@ -2,19 +2,39 @@
 :root {
   /* Colors */
   --color-primary: #ff6fb1;
+
   --color-secondary: #ffd166;
   --color-accent: #4d96ff;
   --color-text: #1f2937;
   --color-text-secondary: #4b5563;
   --color-text-light: #ffffff;
-  --color-text-light-secondary: #e1e1e1;
+  --color-text-light-secondary: #efefef;
 
   --color-bg: #ffffff;
+  --color-bg-rose: #fff0f6;
+
+  --color-secondary-bg: #ffd1662d;
+  --color-primary-bg: #ff6fb024;
+  --color-accent-bg: #4d97ff28;
 
   --box-shadow: 0 5px 10px rgba(199, 196, 196, 0.3);
 
   --font-heading: "Poppins", "Inter", sans-serif;
   --font-body: "Inter", sans-serif;
+
+  --destructive: #d4183d;
+  --destructive-foreground: #ffffff;
+  --border: rgba(0, 0, 0, 0.1);
+  --input: transparent;
+  --input-background: #f3f3f5;
+  --switch-background: #cbced4;
+
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
 }
 
 * {
@@ -31,12 +51,34 @@ body {
   line-height: 1.6;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+}
+
 h1,
 h2,
 h3,
 h4 {
   font-family: var(--font-heading);
   font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.03rem;
+}
+h1 {
+  font-size: 48px;
+}
+h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+h3 {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--color-text-light);
 }
 
 nav {
@@ -53,6 +95,13 @@ a {
   letter-spacing: 0.03rem;
 }
 
+p {
+  text-align: center;
+  font-weight: 300;
+  font-size: 18px;
+  color: var(--color-text-secondary);
+}
+
 button {
   padding: 0.5rem 1rem;
   border: none;
@@ -67,13 +116,3 @@ button:hover {
   transform: scale(1.05);
   box-shadow: var(--box-shadow);
 }
-
-/* .btn {
-  padding: 12px 24px;
-  border-radius: 999px;
-  font-size: 16px;
-  cursor: pointer;
-  border: none;
-  transition: all 0.3s ease;
-} 
-  */
