@@ -28,9 +28,9 @@ const content = [
 </script>
 
 <template>
-  <section class="delivery">
-    <div class="container delivery-content">
-      <Tittle :data="tittle.delivery" />
+  <section id="reviews">
+    <div class="container reviews-content">
+      <Tittle :data="tittle.reviews" />
 
       <ul class="cards">
         <li v-for="item in content">
@@ -48,20 +48,20 @@ const content = [
 </template>
 
 <style scoped>
-.delivery {
+#reviews {
   padding: 4rem 1rem;
   display: flex;
   justify-content: center;
 }
 
-.delivery .cards {
+#reviews .cards {
   display: flex;
   gap: 2rem;
   margin-top: 16px;
   flex-wrap: wrap;
   justify-content: center;
 }
-.delivery .cards li {
+#reviews .cards li {
   background-color: var(--color-bg);
   box-shadow: var(--box-shadow);
   border-radius: 12px;

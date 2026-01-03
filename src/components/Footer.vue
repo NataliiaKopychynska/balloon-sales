@@ -15,10 +15,10 @@
       </div>
       <nav>
         <h3>Quick Links</h3>
-        <a href=""> Catalog </a>
-        <a href="">About Us</a>
-        <a href="">Delivery</a>
-        <a href="">Reviews</a>
+        <a href="#catalog "> Catalog </a>
+        <a href="#about">About Us</a>
+        <a href="#delivery">Delivery</a>
+        <a href="#reviews">Reviews</a>
       </nav>
       <div class="contact-container">
         <h3>Contact Us</h3>

@@ -11,10 +11,10 @@ import Button from "@/Atoms/Button.vue";
       </div>
       <nav>
         <ul class="nav-list">
-          <li><a href="/catalog">Catalog</a></li>
-          <li><a href="/about">About Us</a></li>
-          <li><a href="/delivery">Delivery</a></li>
-          <li><a href="/reviews">Reviews</a></li>
+          <li><a href="#catalog ">Catalog</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#delivery">Delivery</a></li>
+          <li><a href="#reviews">Reviews</a></li>
         </ul>
       </nav>
 

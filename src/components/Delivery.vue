@@ -8,7 +8,7 @@ import Tittle from "@/Atoms/tittle/Tittle.vue";
 </script>
 
 <template>
-  <section class="delivery">
+  <section id="delivery">
     <div class="container delivery-content">
       <Tittle :data="tittle.delivery" />
 
@@ -41,20 +41,20 @@ import Tittle from "@/Atoms/tittle/Tittle.vue";
 </template>
 
 <style scoped>
-.delivery {
+#delivery {
   padding: 4rem 1rem;
   display: flex;
   justify-content: center;
 }
 
-.delivery .cards {
+#delivery .cards {
   display: flex;
   gap: 2rem;
   margin-top: 16px;
   flex-wrap: wrap;
   justify-content: center;
 }
-.delivery .cards li {
+#delivery .cards li {
   background-color: var(--color-bg);
   box-shadow: var(--box-shadow);
   border-radius: 12px;

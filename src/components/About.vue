@@ -7,7 +7,7 @@ import Tittle from "@/Atoms/tittle/Tittle.vue";
 </script>
 
 <template>
-  <section class="about">
+  <section id="about">
     <div class="container about-content">
       <Tittle :data="tittle.about" />
 
@@ -35,14 +35,14 @@ import Tittle from "@/Atoms/tittle/Tittle.vue";
 </template>
 
 <style scoped>
-.about {
+#about {
   padding: 4rem 1rem;
   display: flex;
   justify-content: center;
   background-color: var(--color-bg-rose);
 }
 
-.about .cards {
+#about .cards {
   display: flex;
   gap: 2rem;
   margin-top: 16px;
@@ -50,7 +50,7 @@ import Tittle from "@/Atoms/tittle/Tittle.vue";
   justify-content: center;
   /* background-color: var(--color-bg); */
 }
-.about .cards li {
+#about .cards li {
   background-color: var(--color-bg);
   box-shadow: var(--box-shadow);
   border-radius: 12px;

@@ -6,7 +6,7 @@ import Tittle from "../Atoms/tittle/Tittle.vue";
 </script>
 
 <template>
-  <section class="cards">
+  <section id="catalog">
     <div class="container">
       <Tittle :data="tittle.catalog" />
       <ul>
@@ -19,7 +19,7 @@ import Tittle from "../Atoms/tittle/Tittle.vue";
 </template>
 
 <style scoped>
-.cards {
+#catalog {
   display: flex;
   gap: 2rem;
   margin-top: 80px;
