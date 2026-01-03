@@ -31,12 +31,14 @@ import images from "@/assets/images";
   background-repeat: no-repeat;
   /* background: #482a9b; */
   /* background: ; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .sm-container {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  /* padding-top: 60px;
+  padding-bottom: 60px; */
   color: var(--color-text-light);
-
   gap: 24px;
 }
 </style>

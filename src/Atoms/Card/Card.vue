@@ -98,6 +98,8 @@ defineProps({
   svg {
     width: 24px;
     height: 24px;
+    stroke: var(--color-primary);
+    /* fill: var(--color-primary); */
   }
 }
 </style>

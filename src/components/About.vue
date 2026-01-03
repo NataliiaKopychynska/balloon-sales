@@ -66,6 +66,11 @@ import Tittle from "@/Atoms/tittle/Tittle.vue";
 
   font-size: 18px;
   color: var(--color-text-secondary);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 
   span {
     font-size: 32px;
