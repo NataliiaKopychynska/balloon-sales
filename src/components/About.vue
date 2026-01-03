@@ -2,17 +2,15 @@
 import AwardSvgrepoCom from "@/Atoms/icons/AwardSvgrepoCom.vue";
 import PaletteColorSvgrepoCom from "@/Atoms/icons/PaletteColorSvgrepoCom.vue";
 import UsersSvgrepoCom from "@/Atoms/icons/UsersSvgrepoCom.vue";
+import { tittle } from "@/Atoms/tittle/tittle.js";
+import Tittle from "@/Atoms/tittle/Tittle.vue";
 </script>
 
 <template>
   <section class="about">
     <div class="container about-content">
-      <h2>About BalloonJoy</h2>
-      <p>
-        We are the BalloonJoy team. For over 5 years, we have been creating
-        balloon decorations and compositions for both children and adults. We
-        believe that even a single balloon can bring a smile.
-      </p>
+      <Tittle :data="tittle.about" />
+
       <ul class="cards">
         <li>
           <AwardSvgrepoCom class="icon icon1" />
@@ -42,11 +40,6 @@ import UsersSvgrepoCom from "@/Atoms/icons/UsersSvgrepoCom.vue";
   display: flex;
   justify-content: center;
   background-color: var(--color-bg-rose);
-
-  p {
-    width: 68%;
-    margin-bottom: 24px;
-  }
 }
 
 .about .cards {
@@ -62,7 +55,7 @@ import UsersSvgrepoCom from "@/Atoms/icons/UsersSvgrepoCom.vue";
   box-shadow: var(--box-shadow);
   border-radius: 12px;
   padding: 40px;
-  width: 300px;
+  width: 360px;
   height: 240px;
   /* flex: 1 1 200px; */
   text-align: center;
