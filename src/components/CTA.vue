@@ -31,7 +31,7 @@ import ArrowRightSvgrepoCom from "@/Atoms/icons/ArrowRightSvgrepoCom.vue";
   justify-content: center;
   padding: 2rem 1rem;
   background: linear-gradient(rgba(72, 42, 155), rgba(237, 83, 152));
-  height: 30vh;
+  min-height: 30vh;
 }
 .CTA__content {
   display: flex;

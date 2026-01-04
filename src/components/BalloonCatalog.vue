@@ -3,6 +3,8 @@ import Card from "../Atoms/Card/Card.vue";
 import { cardData } from "../Atoms/Card/card";
 import { tittle } from "@/Atoms/tittle/tittle";
 import Tittle from "../Atoms/tittle/Tittle.vue";
+
+const emit = defineEmits(["order"]);
 </script>
 
 <template>
@@ -11,7 +13,7 @@ import Tittle from "../Atoms/tittle/Tittle.vue";
       <Tittle :data="tittle.catalog" />
       <ul>
         <li v-for="item in cardData" :key="item.id">
-          <Card :card="item" />
+          <Card :card="item" @order="emit('order', $event)" />
         </li>
       </ul>
     </div>

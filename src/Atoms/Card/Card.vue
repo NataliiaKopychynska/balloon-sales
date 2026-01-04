@@ -1,11 +1,17 @@
 <script setup>
 import Button from "../Button.vue";
-defineProps({
+const props = defineProps({
   card: {
     type: Object,
     required: true,
   },
 });
+
+const orderForm = defineEmits(["order"]);
+
+const orderNow = () => {
+  orderForm("order", props.card);
+};
 </script>
 <template>
   <div class="card-container">
@@ -15,7 +21,9 @@ defineProps({
       <p>{{ card.subTitle }}</p>
       <div>
         <p>{{ card.price }}</p>
-        <Button as="button" variant="primary" size="s">Order Now</Button>
+        <Button @click="orderNow" as="button" variant="primary" size="s"
+          >Order Now</Button
+        >
       </div>
     </div>
     <div class="svg-container">

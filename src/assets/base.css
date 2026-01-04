@@ -138,3 +138,34 @@ blockquote {
   /* border-left: 4px solid var(--color-primary); */
   margin: 24px 0;
 }
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-weight: 300;
+  font-size: 18px;
+  color: var(--color-tex);
+}
+
+input,
+textarea {
+  /* min-width: 800px; */
+  padding-left: 12px;
+  font-size: 16px;
+  height: 40px;
+  border: 1px solid var(--border);
+  background-color: var(--input-background);
+  border-radius: 12px;
+  color: var(--color-text-secondary);
+
+  &:hover,
+  :focus {
+    background-color: var(--input-background);
+    border: 1px solid var(--border);
+  }
+
+  &::placeholder {
+    color: var(--color-text-secondary);
+  }
+}
