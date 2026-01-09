@@ -77,4 +77,17 @@ const classes = computed(() => {
   padding: 0.5rem 1.5rem;
   border-radius: 48px;
 }
+
+@media (max-width: 768px) {
+  .button--s {
+    font-size: 16px;
+    height: 40px;
+    padding: 0.5rem 1rem;
+  }
+  .button--m {
+    font-size: 18px;
+    height: 48px;
+    padding: 0.5rem 1rem;
+  }
+}
 </style>

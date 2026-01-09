@@ -169,3 +169,21 @@ textarea {
     color: var(--color-text-secondary);
   }
 }
+
+@media (max-width: 768px) {
+  .container {
+    margin: 0 16px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 10px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+}

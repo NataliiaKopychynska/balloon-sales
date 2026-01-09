@@ -40,16 +40,22 @@
 
 <style scoped>
 footer {
-  padding: 60px 0;
+  padding: 60px 20px;
   background-color: var(--color-bg-dark);
   color: var(--color-text-light);
+  /* width: 100ch; */
 
   .footer-container {
     margin-top: 0;
+    width: 100%;
+
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(1fr, 1fr, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(1fr, 1fr));
+
     gap: 2rem;
+    /* justify-content: space-between; */
+
     /* padding: 3rem 2rem; */
   }
 
@@ -116,7 +122,7 @@ footer {
     grid-column: 1/4;
     grid-row: 2/3;
 
-    width: 1200px;
+    width: 100%;
     height: 2px;
     background-color: var(--color-text-secondary);
   }
