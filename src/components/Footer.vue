@@ -141,4 +141,57 @@ footer {
     }
   }
 }
+
+@media (max-width: 768px) {
+  footer {
+    .footer-container {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(auto-fit, minmax(1fr, 1fr, 1fr));
+      gap: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-title {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        width: 50%;
+        text-align: center;
+      }
+    }
+
+    nav {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      align-items: center;
+    }
+
+    .contact-container {
+      grid-column: 1/2;
+      grid-row: 3/4;
+      align-items: center;
+    }
+
+    .line {
+      grid-column: 1/2;
+      grid-row: 4/5;
+      width: 100%;
+    }
+
+    .copyright {
+      grid-column: 1/2;
+      grid-row: 5/6;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+  }
+}
 </style>
