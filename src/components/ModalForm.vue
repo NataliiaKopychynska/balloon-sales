@@ -151,7 +151,7 @@ const selectOption = (option) => {
 
     form {
       display: grid;
-      grid-template-columns: 1fr, 1fr;
+      grid-template-columns: 1fr 1fr;
       gap: 12px 16px;
 
       flex-direction: column;
@@ -211,7 +211,6 @@ const selectOption = (option) => {
   gap: 6px;
 }
 
-/* поле select */
 .select-trigger {
   height: 40px;
   padding: 0 14px;
@@ -240,7 +239,6 @@ const selectOption = (option) => {
   color: var(--color-text-secondary);
 }
 
-/* стрілка */
 .arrow {
   font-size: 14px;
   transition: transform 0.2s ease;
@@ -250,7 +248,6 @@ const selectOption = (option) => {
   transform: rotate(180deg);
 }
 
-/* dropdown */
 .select-dropdown {
   position: absolute;
   top: calc(100% + 6px);
@@ -266,7 +263,6 @@ const selectOption = (option) => {
   overflow: hidden;
 }
 
-/* option */
 .select-dropdown li {
   padding: 10px 14px;
   cursor: pointer;
@@ -278,5 +274,33 @@ const selectOption = (option) => {
 
 .select-dropdown li:hover {
   background-color: var(--color-bg-rose);
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    /* max-width: 200px; */
+
+    max-width: 90%;
+
+    form {
+      padding: 16px;
+
+      .inp {
+        grid-column: 1/2;
+      }
+      .inp-1 {
+        grid-column: 1/2;
+      }
+      .inp-2 {
+        grid-column: 1/2;
+      }
+    }
+
+    button {
+      grid-column: 1/2;
+    }
+  }
 }
 </style>
