@@ -151,6 +151,9 @@ footer {
 @media (max-width: 768px) {
   footer {
     .footer-container {
+      padding-left: 0;
+      padding-right: 0;
+      margin: 0;
       grid-template-columns: 1fr;
       grid-template-rows: repeat(auto-fit, minmax(1fr, 1fr, 1fr));
       gap: 1.5rem;
